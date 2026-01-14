@@ -4,21 +4,23 @@
 
 .section-archiving {
     background: var(--bg-primary);
+    overflow: hidden;
 }
 
 .archiving-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    max-width: 100%;
 }
 
 .archive-card {
     background: var(--bg-primary);
     border-radius: 20px;
-    padding: 3rem 2rem;
+    padding: 2.5rem 1.75rem;
     box-shadow: var(--shadow-lg);
-    transition: var(--transition-normal);
+    transition: all 0.3s ease;
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
@@ -42,8 +44,8 @@
 }
 
 .archive-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
     border-color: var(--primary-color);
 }
 
@@ -111,14 +113,25 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .archiving-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
     }
 
     .archive-card {
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .archiving-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .archive-card {
+        padding: 2.25rem 1.5rem;
     }
 
     .archive-icon {

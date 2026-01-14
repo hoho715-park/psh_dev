@@ -51,6 +51,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -107,11 +109,14 @@ img {
 /* Section Styles */
 .section {
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     padding: var(--section-padding);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .section-title {
@@ -276,6 +281,7 @@ img {
 @media (max-width: 768px) {
     html {
         font-size: 14px;
+        scroll-snap-type: y proximity;
     }
 
     h1 {
@@ -291,11 +297,19 @@ img {
     }
 
     .section {
-        padding: 80px 20px;
+        padding: 60px 20px;
+        height: auto;
+        min-height: 100vh;
     }
 
     .section-title {
         font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .btn {

@@ -4,14 +4,16 @@
 
 .section-contact {
     background: var(--bg-primary);
+    overflow: hidden;
 }
 
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
-    margin-top: 3rem;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
     align-items: start;
+    max-width: 100%;
 }
 
 /* Contact Info Card */
