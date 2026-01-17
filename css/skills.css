@@ -73,8 +73,19 @@
 }
 
 .skill-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .skill-name {
@@ -109,7 +120,8 @@
     }
 
     .skill-icon {
-        font-size: 2rem;
+        width: 56px;
+        height: 56px;
     }
 
     .skill-name {
@@ -133,7 +145,8 @@
     }
 
     .skill-icon {
-        font-size: 1.75rem;
+        width: 48px;
+        height: 48px;
     }
 
     .skill-name {
