@@ -1,6 +1,6 @@
 /**
  * PSH.DEV Portfolio - Skills Filter
- * 기술 스택 필터링 기능
+ * 기술 스택 필터링 기능 - 순차 등장 애니메이션
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,24 +24,35 @@ function initSkillsFilter() {
             e.preventDefault();
             const category = this.getAttribute('data-category');
 
-            console.log('Filter clicked:', category); // 디버깅용
-
             // 활성 버튼 업데이트
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
 
-            // 카드 필터링 (부드러운 전환)
-            skillCards.forEach((card, index) => {
+            // 먼저 모든 카드 숨기기
+            skillCards.forEach(card => {
+                card.classList.add('hidden');
+                card.style.animation = 'none';
+            });
+
+            // 선택된 카테고리 카드만 순차적으로 표시
+            let visibleIndex = 0;
+            skillCards.forEach((card) => {
                 const cardCategory = card.getAttribute('data-category');
 
-                // 약간의 지연을 두어 순차적 애니메이션 효과
-                setTimeout(() => {
-                    if (category === 'all' || cardCategory === category) {
-                        card.classList.remove('filtered');
-                    } else {
-                        card.classList.add('filtered');
-                    }
-                }, index * 20); // 각 카드마다 20ms 지연
+                if (category === 'all' || cardCategory === category) {
+                    setTimeout(() => {
+                        card.classList.remove('hidden');
+                        // 애니메이션 재실행을 위한 트릭
+                        card.style.animation = 'none';
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => {
+                                card.style.animation = '';
+                                card.style.animationDelay = `${visibleIndex * 0.05}s`;
+                            });
+                        });
+                    }, 10);
+                    visibleIndex++;
+                }
             });
         });
     });
