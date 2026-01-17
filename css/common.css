@@ -39,6 +39,9 @@
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
+
+    /* Scroll */
+    --scroll-duration: 800ms;
 }
 
 /* Reset & Base Styles */
@@ -51,8 +54,19 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-padding-top: 70px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* 부드러운 스크롤을 위한 추가 스타일 */
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -116,7 +130,7 @@ img {
     position: relative;
     padding: var(--section-padding);
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal;
 }
 
 .section-title {
