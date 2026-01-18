@@ -52,21 +52,24 @@
 }
 
 html {
-    scroll-behavior: smooth;
     font-size: 16px;
-    scroll-snap-type: y proximity;
-    scroll-padding-top: 70px;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
     html {
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
     }
 }
 
-/* 부드러운 스크롤을 위한 추가 스타일 */
-html:focus-within {
-    scroll-behavior: smooth;
+/* 모바일에서는 자연스러운 스크롤 */
+@media (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+    }
 }
 
 body {
@@ -120,7 +123,7 @@ img {
     padding: 0 20px;
 }
 
-/* Section Styles */
+/* Section Styles - Full-page Snap Scroll */
 .section {
     min-height: 100vh;
     height: 100vh;
@@ -130,7 +133,18 @@ img {
     position: relative;
     padding: var(--section-padding);
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
+    overflow: hidden;
+}
+
+/* 모바일에서는 snap stop 해제 */
+@media (max-width: 768px) {
+    .section {
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+        height: auto;
+        min-height: 100vh;
+    }
 }
 
 .section-title {
