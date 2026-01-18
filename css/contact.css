@@ -5,13 +5,35 @@
 .section-contact {
     background: var(--bg-primary);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px !important;
+}
+
+.section-contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-contact .section-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.section-contact .section-subtitle {
+    margin-bottom: 2rem;
 }
 
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 2.5rem;
-    margin-top: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
     align-items: start;
     max-width: 100%;
 }

@@ -4,12 +4,20 @@
 
 .section-about {
     background: var(--bg-primary);
-    padding: 40px 20px 80px !important;
+    padding: 0 20px !important;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    height: auto;
+    height: 100vh;
+}
+
+.section-about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .section-about .section-title {
@@ -18,15 +26,15 @@
 }
 
 .section-about .section-subtitle {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-size: 1rem;
 }
 
 .about-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 0;
     margin-bottom: 0;
     width: 100%;
     max-width: 1200px;

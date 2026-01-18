@@ -5,13 +5,35 @@
 .section-archiving {
     background: var(--bg-primary);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px !important;
+}
+
+.section-archiving .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-archiving .section-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.section-archiving .section-subtitle {
+    margin-bottom: 2rem;
 }
 
 .archiving-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
     max-width: 100%;
 }
 
