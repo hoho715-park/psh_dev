@@ -1,402 +1,495 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PSH.DEV - 풀스택 개발자 박성호의 포트폴리오">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PSH.DEV - 풀스택 개발자 박성호의 포트폴리오"
+    />
     <title>PSH.DEV | 박성호 포트폴리오</title>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/archiving.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/archiving.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">PSH.DEV</div>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">HOME</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#archiving" class="nav-link">Archiving</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <div class="nav-logo">PSH.DEV</div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#archiving" class="nav-link">Archiving</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- HOME Section -->
     <section id="home" class="section section-home">
-        <div class="home-content">
-            <p class="home-greeting">안녕하세요,</p>
-            <h1 class="home-title">풀스택 개발자를 꿈꾸는<br><span class="highlight">박성호</span>입니다.</h1>
-            <p class="home-subtitle">Frontend와 Backend를 연결하는 개발자</p>
-            <div class="home-cta">
-                <a href="#about" class="btn btn-primary">더 알아보기</a>
-                <a href="#contact" class="btn btn-outline">연락하기</a>
-            </div>
+      <div class="home-content">
+        <p class="home-greeting">안녕하세요,</p>
+        <h1 class="home-title">
+          풀스택 개발자를 꿈꾸는<br /><span class="highlight">박성호</span
+          >입니다.
+        </h1>
+        <p class="home-subtitle">Frontend와 Backend를 연결하는 개발자</p>
+        <div class="home-cta">
+          <a href="#about" class="btn btn-primary">더 알아보기</a>
+          <a href="#contact" class="btn btn-outline">연락하기</a>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-icon"></div>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="scroll-icon"></div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section section-about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">저를 소개합니다</p>
-            <div class="about-cards">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <img src="images/about1.png" alt="Frontend Development">
-                    </div>
-                    <h3 class="card-title">사용자 중심의 프런트엔드 설계</h3>
-                    <p class="card-description">
-                        React를 활용하여 재사용 가능한 컴포넌트 기반의 UI를 구축하고,
-                        사용자 경험(UX)을 극대화하는 반응형 웹을 구현합니다.
-                        상태 관리 라이브러리와 최신 훅(Hooks)을 사용하여
-                        복잡한 비즈니스 로직을 효율적으로 처리합니다.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <img src="images/about2.png" alt="Backend Development">
-                    </div>
-                    <h3 class="card-title">안정적인 백엔드 및 API 구축</h3>
-                    <p class="card-description">
-                        Spring Boot와 JPA를 사용하여 대규모 데이터를 안정적으로 처리하는
-                        REST API 서버를 설계합니다.
-                        계층화된 아키텍처를 준수하여 유지보수가 용이한 코드를 작성하며,
-                        보안과 확장성을 고려한 백엔드 환경을 구축합니다.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <img src="images/about3.png" alt="Collaboration Tools">
-                    </div>
-                    <h3 class="card-title">효율적인 협업을 위한 툴체인 활용</h3>
-                    <p class="card-description">
-                        GitHub 기반 Git-flow 전략을 활용한 체계적인 코드 관리와 코드 리뷰를 실천합니다.
-                        Notion으로 요구사항과 컨벤션을 문서화하고,
-                        Figma를 통해 디자인 의도를 정확히 파악하여 구현에 반영합니다.
-                    </p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">유연하게 소통하고 견고하게 개발합니다</p>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="card-icon">
+              <img src="images/about1.png" alt="Frontend Development" />
             </div>
+            <h3 class="card-title">사용자 중심의 프런트엔드 설계</h3>
+            <p class="card-description">
+              React를 활용하여 재사용 가능한 컴포넌트 기반의 UI를 구축하고,
+              사용자 경험(UX)을 극대화하는 반응형 웹을 구현합니다. 상태 관리
+              라이브러리와 최신 훅(Hooks)을 사용하여 복잡한 비즈니스 로직을
+              효율적으로 처리합니다.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">
+              <img src="images/about2.png" alt="Backend Development" />
+            </div>
+            <h3 class="card-title">안정적인 백엔드 및 API 구축</h3>
+            <p class="card-description">
+              Spring Boot와 JPA를 사용하여 대규모 데이터를 안정적으로 처리하는
+              REST API 서버를 설계합니다. 계층화된 아키텍처를 준수하여
+              유지보수가 용이한 코드를 작성하며, 보안과 확장성을 고려한 백엔드
+              환경을 구축합니다.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">
+              <img src="images/about3.png" alt="Collaboration Tools" />
+            </div>
+            <h3 class="card-title">효율적인 협업을 위한 툴체인 활용</h3>
+            <p class="card-description">
+              GitHub 기반 Git-flow 전략을 활용한 체계적인 코드 관리와 코드
+              리뷰를 실천합니다. Notion으로 요구사항과 컨벤션을 문서화하고,
+              Figma를 통해 디자인 의도를 정확히 파악하여 구현에 반영합니다.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section section-skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <p class="section-subtitle">보유 기술 스택</p>
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">보유 기술 스택</p>
 
-            <div class="skills-filter">
-                <button class="filter-btn active" data-category="all">전체</button>
-                <button class="filter-btn" data-category="frontend">Frontend</button>
-                <button class="filter-btn" data-category="backend">Backend</button>
-                <button class="filter-btn" data-category="cms">CMS</button>
-                <button class="filter-btn" data-category="etc">ETC</button>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-card" data-category="frontend" data-proficiency="90">
-                    <div class="skill-icon">
-                        <img src="images/html.png" alt="HTML">
-                    </div>
-                    <h3 class="skill-name">HTML</h3>
-                </div>
-                <div class="skill-card" data-category="frontend" data-proficiency="90">
-                    <div class="skill-icon">
-                        <img src="images/css.png" alt="CSS">
-                    </div>
-                    <h3 class="skill-name">CSS</h3>
-                </div>
-                <div class="skill-card" data-category="frontend" data-proficiency="90">
-                    <div class="skill-icon">
-                        <img src="images/js.png" alt="JavaScript">
-                    </div>
-                    <h3 class="skill-name">JavaScript</h3>
-                </div>
-                <div class="skill-card" data-category="frontend" data-proficiency="70">
-                    <div class="skill-icon">
-                        <img src="images/react.png" alt="React">
-                    </div>
-                    <h3 class="skill-name">React</h3>
-                </div>
-                <div class="skill-card" data-category="frontend" data-proficiency="70">
-                    <div class="skill-icon">
-                        <img src="images/vite.png" alt="Vite">
-                    </div>
-                    <h3 class="skill-name">Vite</h3>
-                </div>
-                <div class="skill-card" data-category="backend" data-proficiency="70">
-                    <div class="skill-icon">
-                        <img src="images/springboot.png" alt="Spring Boot">
-                    </div>
-                    <h3 class="skill-name">Spring Boot</h3>
-                </div>
-                <div class="skill-card" data-category="backend" data-proficiency="50">
-                    <div class="skill-icon">
-                        <img src="images/java.png" alt="Java">
-                    </div>
-                    <h3 class="skill-name">Java</h3>
-                </div>
-                <div class="skill-card" data-category="backend" data-proficiency="70">
-                    <div class="skill-icon">
-                        <img src="images/php.png" alt="PHP">
-                    </div>
-                    <h3 class="skill-name">PHP</h3>
-                </div>
-                <div class="skill-card" data-category="backend" data-proficiency="50">
-                    <div class="skill-icon">
-                        <img src="images/python.png" alt="Python">
-                    </div>
-                    <h3 class="skill-name">Python</h3>
-                </div>
-                <div class="skill-card" data-category="cms" data-proficiency="80">
-                    <div class="skill-icon">
-                        <img src="images/wordpress.png" alt="WordPress">
-                    </div>
-                    <h3 class="skill-name">WordPress</h3>
-                </div>
-                <div class="skill-card" data-category="etc" data-proficiency="80">
-                    <div class="skill-icon">
-                        <img src="images/notion.png" alt="Notion">
-                    </div>
-                    <h3 class="skill-name">Notion</h3>
-                </div>
-                <div class="skill-card" data-category="etc" data-proficiency="80">
-                    <div class="skill-icon">
-                        <img src="images/github.png" alt="GitHub">
-                    </div>
-                    <h3 class="skill-name">GitHub</h3>
-                </div>
-                <div class="skill-card" data-category="etc" data-proficiency="80">
-                    <div class="skill-icon">
-                        <img src="images/figma.png" alt="Figma">
-                    </div>
-                    <h3 class="skill-name">Figma</h3>
-                </div>
-                <div class="skill-card" data-category="etc" data-proficiency="30">
-                    <div class="skill-icon">
-                        <img src="images/potoshop.png" alt="Photoshop">
-                    </div>
-                    <h3 class="skill-name">Photoshop</h3>
-                </div>
-            </div>
+        <div class="skills-filter">
+          <button class="filter-btn active" data-category="all">전체</button>
+          <button class="filter-btn" data-category="frontend">Frontend</button>
+          <button class="filter-btn" data-category="backend">Backend</button>
+          <button class="filter-btn" data-category="cms">CMS</button>
+          <button class="filter-btn" data-category="etc">ETC</button>
         </div>
+
+        <div class="skills-grid">
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-proficiency="90"
+          >
+            <div class="skill-icon">
+              <img src="images/html.png" alt="HTML" />
+            </div>
+            <h3 class="skill-name">HTML</h3>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-proficiency="90"
+          >
+            <div class="skill-icon">
+              <img src="images/css.png" alt="CSS" />
+            </div>
+            <h3 class="skill-name">CSS</h3>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-proficiency="90"
+          >
+            <div class="skill-icon">
+              <img src="images/js.png" alt="JavaScript" />
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-proficiency="70"
+          >
+            <div class="skill-icon">
+              <img src="images/react.png" alt="React" />
+            </div>
+            <h3 class="skill-name">React</h3>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-proficiency="70"
+          >
+            <div class="skill-icon">
+              <img src="images/vite.png" alt="Vite" />
+            </div>
+            <h3 class="skill-name">Vite</h3>
+          </div>
+          <div class="skill-card" data-category="backend" data-proficiency="70">
+            <div class="skill-icon">
+              <img src="images/springboot.png" alt="Spring Boot" />
+            </div>
+            <h3 class="skill-name">Spring Boot</h3>
+          </div>
+          <div class="skill-card" data-category="backend" data-proficiency="50">
+            <div class="skill-icon">
+              <img src="images/java.png" alt="Java" />
+            </div>
+            <h3 class="skill-name">Java</h3>
+          </div>
+          <div class="skill-card" data-category="backend" data-proficiency="70">
+            <div class="skill-icon">
+              <img src="images/php.png" alt="PHP" />
+            </div>
+            <h3 class="skill-name">PHP</h3>
+          </div>
+          <div class="skill-card" data-category="backend" data-proficiency="50">
+            <div class="skill-icon">
+              <img src="images/python.png" alt="Python" />
+            </div>
+            <h3 class="skill-name">Python</h3>
+          </div>
+          <div class="skill-card" data-category="cms" data-proficiency="80">
+            <div class="skill-icon">
+              <img src="images/wordpress.png" alt="WordPress" />
+            </div>
+            <h3 class="skill-name">WordPress</h3>
+          </div>
+          <div class="skill-card" data-category="etc" data-proficiency="80">
+            <div class="skill-icon">
+              <img src="images/notion.png" alt="Notion" />
+            </div>
+            <h3 class="skill-name">Notion</h3>
+          </div>
+          <div class="skill-card" data-category="etc" data-proficiency="80">
+            <div class="skill-icon">
+              <img src="images/github.png" alt="GitHub" />
+            </div>
+            <h3 class="skill-name">GitHub</h3>
+          </div>
+          <div class="skill-card" data-category="etc" data-proficiency="80">
+            <div class="skill-icon">
+              <img src="images/figma.png" alt="Figma" />
+            </div>
+            <h3 class="skill-name">Figma</h3>
+          </div>
+          <div class="skill-card" data-category="etc" data-proficiency="30">
+            <div class="skill-icon">
+              <img src="images/potoshop.png" alt="Photoshop" />
+            </div>
+            <h3 class="skill-name">Photoshop</h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Archiving Section -->
     <section id="archiving" class="section section-archiving">
-        <div class="container">
-            <h2 class="section-title">Archiving</h2>
-            <p class="section-subtitle">프로젝트 및 학습 아카이브</p>
-            <div class="archiving-grid">
-                <a href="https://github.com/hoho715-park" target="_blank" rel="noopener noreferrer" class="archive-card github-card">
-                    <div class="archive-icon">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </div>
-                    <h3 class="archive-title">GitHub</h3>
-                    <p class="archive-description">프로젝트 소스코드와 학습 기록을 관리하는 저장소입니다.</p>
-                    <span class="archive-link">github.com/hoho715-park →</span>
-                </a>
-
-                <a href="https://hoho715.tistory.com/" target="_blank" rel="noopener noreferrer" class="archive-card blog-card">
-                    <div class="archive-icon">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M3 5v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2zm16.99-.01H5a1 1 0 00-1 1V19.99a1 1 0 001 1h14.99a1 1 0 001-1V5.99a1 1 0 00-1-1zM11 9H8v2h3V9zm0 4H8v2h3v-2zm5-4h-3v2h3V9zm0 4h-3v2h3v-2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="archive-title">개발 블로그</h3>
-                    <p class="archive-description">개발 과정과 기술 학습 내용을 기록하는 블로그입니다.</p>
-                    <span class="archive-link">hoho715.tistory.com →</span>
-                </a>
-
-                <a href="http://nodefolio.co.kr/" target="_blank" rel="noopener noreferrer" class="archive-card team-card">
-                    <div class="archive-icon">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="archive-title">팀 포트폴리오</h3>
-                    <p class="archive-description">팀 프로젝트와 협업 경험을 공유하는 포트폴리오입니다.</p>
-                    <span class="archive-link">nodefolio.co.kr →</span>
-                </a>
+      <div class="container">
+        <h2 class="section-title">Archiving</h2>
+        <p class="section-subtitle">프로젝트 및 학습 아카이브</p>
+        <div class="archiving-grid">
+          <a
+            href="https://github.com/hoho715-park"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="archive-card github-card"
+          >
+            <div class="archive-icon">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
             </div>
+            <h3 class="archive-title">GitHub</h3>
+            <p class="archive-description">
+              프로젝트 소스코드와 학습 기록을 관리하는 저장소입니다.
+            </p>
+            <span class="archive-link">github.com/hoho715-park →</span>
+          </a>
+
+          <a
+            href="https://hoho715.tistory.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="archive-card blog-card"
+          >
+            <div class="archive-icon">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 5v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2zm16.99-.01H5a1 1 0 00-1 1V19.99a1 1 0 001 1h14.99a1 1 0 001-1V5.99a1 1 0 00-1-1zM11 9H8v2h3V9zm0 4H8v2h3v-2zm5-4h-3v2h3V9zm0 4h-3v2h3v-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="archive-title">개발 블로그</h3>
+            <p class="archive-description">
+              개발 과정과 기술 학습 내용을 기록하는 블로그입니다.
+            </p>
+            <span class="archive-link">hoho715.tistory.com →</span>
+          </a>
+
+          <a
+            href="http://nodefolio.co.kr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="archive-card team-card"
+          >
+            <div class="archive-icon">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                />
+              </svg>
+            </div>
+            <h3 class="archive-title">팀 포트폴리오</h3>
+            <p class="archive-description">
+              팀 프로젝트와 협업 경험을 공유하는 포트폴리오입니다.
+            </p>
+            <span class="archive-link">nodefolio.co.kr →</span>
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section section-projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <p class="section-subtitle">진행한 프로젝트</p>
-            <div class="projects-grid">
-                <div class="project-card" data-project="1">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <span class="view-detail">자세히 보기</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">E-Commerce 플랫폼</h3>
-                        <p class="project-brief">Spring Boot + React 기반 쇼핑몰</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="2">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <span class="view-detail">자세히 보기</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">팀 협업 관리 시스템</h3>
-                        <p class="project-brief">실시간 협업 도구</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">WebSocket</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="3">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <span class="view-detail">자세히 보기</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">포트폴리오 빌더</h3>
-                        <p class="project-brief">개발자를 위한 포트폴리오 생성 도구</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Vite</span>
-                            <span class="tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">진행한 프로젝트</p>
+        <div class="projects-grid">
+          <div class="project-card" data-project="1">
+            <div class="project-image">
+              <div class="project-overlay">
+                <span class="view-detail">자세히 보기</span>
+              </div>
             </div>
+            <div class="project-info">
+              <h3 class="project-title">E-Commerce 플랫폼</h3>
+              <p class="project-brief">Spring Boot + React 기반 쇼핑몰</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="2">
+            <div class="project-image">
+              <div class="project-overlay">
+                <span class="view-detail">자세히 보기</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">팀 협업 관리 시스템</h3>
+              <p class="project-brief">실시간 협업 도구</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="3">
+            <div class="project-image">
+              <div class="project-overlay">
+                <span class="view-detail">자세히 보기</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">포트폴리오 빌더</h3>
+              <p class="project-brief">개발자를 위한 포트폴리오 생성 도구</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section section-contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="section-subtitle">언제든 연락주세요</p>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-header">
-                            <h3>박성호</h3>
-                            <p class="info-role">Fullstack Developer</p>
-                        </div>
-                        <div class="info-details">
-                            <div class="info-item">
-                                <span class="info-label">생년월일</span>
-                                <span class="info-value">2001.07.15</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">연락처</span>
-                                <span class="info-value">010-2922-6844</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">이메일</span>
-                                <span class="info-value">andytjdgh@gmail.com</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">학력</span>
-                                <span class="info-value">홍익대학교<br>(소프트웨어융합학과)</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">MBTI</span>
-                                <span class="info-value">ENFJ</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">언제든 연락주세요</p>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-header">
+                <h3>박성호</h3>
+                <p class="info-role">Fullstack Developer</p>
+              </div>
+              <div class="info-details">
+                <div class="info-item">
+                  <span class="info-label">생년월일</span>
+                  <span class="info-value">2001.07.15</span>
                 </div>
-
-                <div class="contact-form-wrapper">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">이름</label>
-                            <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">이메일</label>
-                            <input type="email" id="email" name="email" required placeholder="이메일을 입력해주세요">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">메시지</label>
-                            <textarea id="message" name="message" rows="6" required placeholder="메시지를 입력해주세요"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit">보내기</button>
-                    </form>
+                <div class="info-item">
+                  <span class="info-label">연락처</span>
+                  <span class="info-value">010-2922-6844</span>
                 </div>
+                <div class="info-item">
+                  <span class="info-label">이메일</span>
+                  <span class="info-value">andytjdgh@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">학력</span>
+                  <span class="info-value"
+                    >홍익대학교<br />(소프트웨어융합학과)</span
+                  >
+                </div>
+                <div class="info-item">
+                  <span class="info-label">MBTI</span>
+                  <span class="info-value">ENFJ</span>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">이름</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="성함을 입력해주세요"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">이메일</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="이메일을 입력해주세요"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">메시지</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="메시지를 입력해주세요"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                보내기
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 PSH.DEV. All rights reserved.</p>
+      <p>&copy; 2025 PSH.DEV. All rights reserved.</p>
     </footer>
 
     <!-- Project Modal -->
     <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div class="modal-body">
-                <h2 id="modal-title" class="modal-title"></h2>
-                <div id="modal-tags" class="modal-tags"></div>
-                <div class="modal-section">
-                    <h3>프로젝트 개요</h3>
-                    <p id="modal-overview"></p>
-                </div>
-                <div class="modal-section">
-                    <h3>사용 기술</h3>
-                    <p id="modal-tech"></p>
-                </div>
-                <div class="modal-section">
-                    <h3>담당 역할</h3>
-                    <p id="modal-role"></p>
-                </div>
-                <div class="modal-section">
-                    <h3>문제 해결 경험</h3>
-                    <p id="modal-challenge"></p>
-                </div>
-            </div>
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-body">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <div id="modal-tags" class="modal-tags"></div>
+          <div class="modal-section">
+            <h3>프로젝트 개요</h3>
+            <p id="modal-overview"></p>
+          </div>
+          <div class="modal-section">
+            <h3>사용 기술</h3>
+            <p id="modal-tech"></p>
+          </div>
+          <div class="modal-section">
+            <h3>담당 역할</h3>
+            <p id="modal-role"></p>
+          </div>
+          <div class="modal-section">
+            <h3>문제 해결 경험</h3>
+            <p id="modal-challenge"></p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- JavaScript Files -->
@@ -405,5 +498,5 @@
     <script src="js/skillsFilter.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/contact.js"></script>
-</body>
+  </body>
 </html>
